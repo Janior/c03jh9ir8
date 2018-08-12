@@ -1,0 +1,15 @@
+<table>
+  <% @actors.each do |a| %>
+     <tr>
+   	   <td><%=image_tag a.image_url %></td>
+       <td><%= a.name %></td>
+       <td><%= a.bio %></td>
+       <td><%= a.birth_date %></td>
+       <td><%= a.birth_place %></td>
+       <% if  a.alive == true %>
+           <td><%= a.death_date %></td>
+           <td><%= a.death_place %></td>
+       <% end %> 
+    </tr>
+  <% end %>
+</table>
