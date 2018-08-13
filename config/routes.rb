@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-    get 'actors' => 'actors#listado'
-    get 'actors/nuevo' => 'actor#new'
-    get 'actors/crear' => 'actor#crear'
+    resources :actors
+    #get 'actors' => 'actors#listado'
+    #get 'actors/new' => 'actors#new'
+    
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
